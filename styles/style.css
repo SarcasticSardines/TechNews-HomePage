@@ -70,10 +70,13 @@ hr{
     color: hsl(36, 100%, 99%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .burger{
         display: block;
     }
+}
+
+@media screen and (max-width: 768px) {
     .navRight{
         text-align: left;
         margin-left: 10%;
