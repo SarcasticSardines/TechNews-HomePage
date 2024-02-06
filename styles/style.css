@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+.niceFont{
+    font-family: Inter;
+}
+.burger{
+    display: none;
+}
+.navRight{
+    justify-content: end;
+    text-align: end;
+}
+.nav-link:hover{
+    color: hsl(5, 85%, 63%); 
+}
+.headTxt{
+    font-size: 70px;
+    font-weight: 800;
+    /* breakpoint font size for this one possibly? */
+}
+.headerW{
+    width: 100%;
+}
+.newBox{
+    background-color: hsl(240, 100%, 5%);
+}
+.dbTxt{
+    color: hsl(240, 100%, 5%);
+}
+.article{
+    color: hsl(240, 100%, 5%);
+}
+.article:hover{
+    color: hsl(5, 85%, 63%);
+}
+.whTxt{
+    color: hsl(36, 100%, 99%);
+}
+.whTxt:hover{
+    color: hsl(35, 77%, 62%);
+}
+.greyish{
+    color: hsl(233, 8%, 79%);
+}
+.greyishLgr{
+    color: hsl(233, 8%, 79%);
+    font-size: 19px;
+}
+.bluTxt{
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.readBtn{
+    background-color: hsl(5, 85%, 63%); 
+    border: none;
+}
+.readBtn:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+.mini{
+    height: 75%;
+}
+.miniDiv{
+ width: 160px;
+}
+hr{
+    color: hsl(36, 100%, 99%);
+}
+
+@media screen and (max-width: 768px) {
+    .burger{
+        display: block;
+    }
+    .navRight{
+        text-align: left;
+        margin-left: 10%;
+        color: hsl(240, 100%, 5%);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .newBox{
+        width: 500px;
+        margin: auto;
+        margin-top: 50px;
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #bigHead{
+        content: url("../assets/images/image-web-3-mobile.jpg");
+    }
+    #offcanvasRight{
+        --bs-offcanvas-width: 270px
+    }
+    .newBox{
+        width: 90%;
+        margin-top: 20%;
+    }
+    .headTxt{
+    font-size: 55px;
+}
+.phoneSpace{
+    margin-left: 5%;
+}
+.phoneSpaceLess{
+    margin-left: 2%;
+}
+   
+}

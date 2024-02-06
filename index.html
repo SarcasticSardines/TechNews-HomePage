@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="niceFont">
+
+  <nav class="navbar navbar-expand-lg d-flex ">
+    <div class="container">
+      <img class="navbar-brand mb-0" src="./assets/images/logo.svg" alt="W."/>
+      
+      <button class="btn burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">&nbsp;</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+        <div class="navbar-nav navRight">
+         
+            <a class="nav-link bluTxt" href="#">Home</a>
+          
+            <a class="nav-link bluTxt" href="#">New</a>
+          
+            <a class="nav-link bluTxt" href="#">Popular</a>
+         
+            <a class="nav-link bluTxt" href="#">Trending</a>
+          
+            <a class="nav-link bluTxt" href="#">Categories</a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- header img, title, summary and button -->
+        <img id="bigHead" src="./assets/images/image-web-3-desktop.jpg" alt="image of colorful blocks and shapes" class="headerW">
+        <div class="row d-flex">
+          <div class="col-lg-6 col-md-6 mt-3">
+            <h1 class="headTxt phoneSpaceLess">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="col-lg-6 col-md-6 ms-auto mt-4">
+            <!-- put inside div and add mx -->
+            <p class="bluTxt me-5 phoneSpace">We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people.
+              But is it really fulfilling its promise? </p>
+            <button class="px-5 py-2 readBtn mt-4 phoneSpace"> <span style="font-size: 16px; color: hsl(36, 100%, 99%); letter-spacing: 3px;">
+                <!-- button seems same through all breakpoints -->
+                READ MORE
+              </span> </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 newBox">
+        <h1 class="text-start my-4 ms-2" style="color: hsl(35, 77%, 62%);"><b>New</b></h1>
+        <!-- add my inbetween cols -->
+        <div class="col-12 ms-2">
+          <h4 class="whTxt"><b>Hydrogen VS Electric Cars</b></h4>
+          <p class="greyishLgr me-5 mb-5"> Will hydrogen-fueled cars ever catch up to EVs? </p>
+        </div>
+        <hr class="mb-4">
+        <div class="col-12 ms-2">
+          <h4 class="whTxt"><b>The Downsides of AI Artistry</b></h4>
+          <p class="greyishLgr me-5 mb-5"> What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr class="mb-4">
+        <div class="col-12 ms-2">3
+          <h4 class="whTxt"><b>Is VC Funding Drying Up?</b></h4>
+          <p class="greyishLgr me-5">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- margin ys inbetween these -->
+
+
+  <div class="container mt-5 pt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="row">
+          <!-- lessen heights of imgs -->
+          <div class="col-1 miniDiv"> <img class="mini" src="./assets/images/image-retro-pcs.jpg" alt="retro computer"> </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12 greyish"><h1>01</h1> </div>
+              <div class="col-12 article"> <h5> <b> Reviving Retro PCs</b> </h5> </div>
+              <div class="col-12 bluTxt"><p class="me-3">What happens when old PCs are given modern upgrades?</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="row">
+          <div class="col-1 miniDiv"> <img class="mini" src="./assets/images/image-top-laptops.jpg" alt="closeup of keyboard"> </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12 greyish"> <h1>02</h1> </div>
+              <div class="col-12 article"> <h5><b>Top 10 Laptops of 2022</b></h5></div>
+              <div class="col-12 bluTxt"> <p class="me-3">Our best picks for various needs and budgets.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="row">
+          <div class="col-1 miniDiv"> <img class="mini" src="./assets/images/image-gaming-growth.jpg" alt="hand tossing up gaming controller">
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12 greyish">
+                <h1>03</h1>
+              </div>
+              <div class="col-12 article"> <h5> <b> The Growth of Gaming</b></h5> </div>
+              <div class="col-12 bluTxt"><p class="me-3">How the pandemic has sparked fresh opportunities.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
